@@ -1,0 +1,449 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:rgb(248, 174, 230);
+  }
+  
+  .logo img {
+    height: 35px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    padding-left: 275px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .search-bar button img {
+    height: 20px;
+  }
+
+  .add-prescription {
+    border-radius: 20px;
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width : 200px;
+  }
+
+  .add-prescription a{
+    text-decoration: none;
+  }
+  
+  .user-links a {
+    margin-left: 10px;
+  }
+
+  .user-links a img {
+    height: 25px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now, nav ul li a:hover {
+    background-color: #555;
+    border-radius: 0%;
+}
+
+.hero {
+    background-image: url("images/backbanner.jpg");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #faf9f9;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #faf9f9;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #eee;
+}
+
+.featured-books {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.featured-books h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.medi-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book {
+    width: 250px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.book img {
+    width: 150px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.book h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.book .author {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.book .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.newsletter {
+    background-color: #eee;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.newsletter button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.about{
+    background-color: #eee;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p{
+    text-align: center;
+}
+
+.hr {
+    border: 10px solid rgb(68, 237, 252);
+    border-radius: 5px;
+}
+
+/* Login Popup */
+.login-popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.login-content {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.login-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-content form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login-content form input[type="text"],
+.login-content form input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-content form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-content form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.login-content p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-content p a {
+    color: #333;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    flex-basis: 25%;
+  }
+
+  .footer-column:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;        
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  
+  .social-media li {
+    display: inline-block;
+    margin: 0 5px;
+    margin-right: 10px;
+  }
+  
+  .social-media li a {
+    color: #fff;
+  }
+  
+  .social-media li a:hover {
+    color: #eee;
+  }
+
+  .align-right {
+    text-align: right;
+  }
+
+  .footer-column .social-media li a img {
+    width: 40px; 
+    height: 40px; 
+  }
+
+
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .featured-books h2 {
+        font-size: 24px;
+    }
+
+    .book {
+        width: 200px;
+    }
+
+    .book img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .book h3 {
+        font-size: 18px;
+    }
+
+    .book .author {
+        font-size: 14px;
+    }
+
+    .book .price {
+        font-size: 18px;
+    }
+
+    .newsletter h2 {
+        font-size: 24px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 200px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+    }
+}

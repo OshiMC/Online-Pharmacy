@@ -1,0 +1,54 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse:separate;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #27bde2;
+}
+
+th {
+    background-color: #2ad9f0;
+}
+
+.btn-add {
+   
+    margin: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color:blue;
+    color: #fff;
+    border-radius: 3px;
+}
+.btn-up {
+   
+    margin: 3px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color:rgb(4, 90, 4);
+    color: #fff;
+    border-radius: 3px;
+}
+.btn-del {
+   
+    margin: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color:rgb(240, 49, 35);
+    color: #fff;
+    border-radius: 3px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}

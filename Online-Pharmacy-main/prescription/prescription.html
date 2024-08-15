@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Prescription</title>
+    <link rel="stylesheet" href="CSS/prestyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../index.php"><img src="icons/purecare.png" alt="Pharmacy Logo"></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><img src="icons/search-icon.png" alt="Search"></button>
+        </div>
+        <div>
+            <button class="add-prescription"><a href="MedicalD/prescription/prescription.html">Upload Prescription</a></button>
+        </div>
+        <div class="user-links">
+          <a href="../../cart/cart.html" class = "cart"><img src="icons/cart.png" alt="Cart"></a>
+          <a href="../../LoginPage/Resgister.html" onclick="openLoginPopup()"><img src="icons/login.png" alt="Login"></a>
+        </div>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="../../index.php">Home</a></li>
+                <li><a href="../medicine/COUGH.html">Medicine</a></li>
+                <li><a href="../MedicalD/new4/device.html">Medical Devices</a></li>
+                <li><a href="../Wellness/bs/Beauty suppliment.html">Wellness</a></li>
+                <li><a href="../Personal Care/Body/bodycare.html">Personal Care</a></li>
+                <li><a href="../AboutUs/index.html">About Us</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+       
+        <div class="presbox">
+            <h3>How to Add prescription correctly,</h3>
+            <br>
+            <ol class="list">
+                <li>Fill all the required fields and upload your prescription</li>
+                <li>Please upload an image of your medical prescription issued by a registered doctor</li>
+                <li>Prescription list will be issued if a valid prescription image is provided</li>
+                <li>Submit your prescription</li>
+                <li>A customer care representative will get in touch with your order</li>
+            </ol>
+            <br><br>
+            <h4>Please enter the prescriber's Name and Contact information</h4>
+            <textarea placeholder="Enter the details...." required></textarea>
+            <input type="file" id="fbtn">
+            <br><br>
+            <button onclick="getfile()">Upload Prescription</button>
+            <br><br>
+            <p>We are committed to protecting the privacy of your personal information and prescription data. Industry standards are followed in the secure encryption and storage of all data.</p>
+            <br><br>
+            <div>
+                <input type="checkbox" id="termsCheckbox" onchange="updateSubmitButton()">
+                <label for="termsCheckbox">Accept our terms of service and privacy statement by sending this form</label>
+                <br><br>
+                <input type="submit" value="Submit" id="submitButton" class="submitButton">
+            </div>
+       
+        </div>
+    </div>
+    <footer>
+      <div class="footer-row">
+        <div class="footer-column">
+          <h3>Product Range</h3>
+          <ul>
+            <li>Health</li>
+            <li>Body care</li>
+            <li>Personal care</li>
+            <li>Mother and baby</li>
+            <li>Wellness</li>
+            <li>Traditional Remedies</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Information</h3>
+          <ul>
+            <li>About Us</li>
+            <li>FAQ</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>Address: No 77, Galaha Rd, Peradeniya, Kandy.</li>
+            <li>Email: info@purecare.com</li>
+            <li>Phone: +94 76 450 2288</li>
+            <li>             +94 76 450 2285</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <ul class="social-media">
+              <li><a href="#"><img src="icons/facebook1.png" alt="Facebook"></a></li>
+              <li><a href="#"><img src="icons/twitter.png" alt="Twitter"></a></li>
+              <li><a href="#"><img src="icons/instagram.png" alt="Instagram"></a></li>
+              <li><a href="#"><img src="icons/whatapp.png" alt="WhatsApp"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        const textarea = document.querySelector("textarea");
+        textarea.addEventListener("keyup", e => {
+            textarea.style.height = "2px";
+            let scheight = e.target.scrollHeight;
+            textarea.style.height = `${scheight}px`;
+        });
+
+        function getfile() {
+            document.getElementById('fbtn').click();
+        }
+
+        function updateSubmitButton() {
+            const termsCheckbox = document.getElementById('termsCheckbox');
+            const submitButton = document.getElementById('submitButton');
+            submitButton.disabled = !termsCheckbox.checked;
+        }
+    </script>
+</body>
+</html>

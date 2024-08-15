@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness|Pure Care Pharmacy</title>
+    <link rel="stylesheet" href="Beauty.css?v=<?php echo time(); ?>">
+    <script src="Beauty.js" defer></script>
+    <script src="https://kit.fontawesome.com/5ee0b91135.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    
+    <header>
+        <div class="logo">
+            <a href="../../index.php"><img src="images/purecare.png" alt="Pharmacy Logo"></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><img src="images/search-icon.png" alt="Search"></button>
+        </div>
+        <div>
+            <button class="add-prescription"><a href="prescription/prescription.html">Upload Prescription</a></button>
+        </div>
+        <div class="user-links">
+          <a href="#" class = "cart"><img src="images/cart.png" alt="Cart"></a>
+          <a href="#" onclick="openLoginPopup()"><img src="images/login.png" alt="Login"></a>
+        </div>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="../../index.php">Home</a></li>
+                <li><a href="../../MedicalD/new4/device.html">Medical Devices</a></li>
+                <li><a href="../../Wellness/bs/Beauty suppliment.html">Wellness</a></li>
+                <li><a href="../../Personal Care/Body/bodycare.html">Personal Care</a></li>
+                <li><a href="../../AboutUs/index.html">About Us</a></li>
+            </ul>
+        </nav>
+  <br>
+   
+  <div class="sort-container">
+    <label for="sort" class="sort-label">Sort By:</label>
+    <select id="sort" class="sort-dropdown">
+        <option value="">Beauty Suppliment</option>
+        <option value="E:\Coding\.vscode\HTML3\Wellness\Diet\DT.html">Diet and Nutrition</option>
+        <option value="device2.html">Traditional Remidies</option>
+    </select>
+ </div>
+
+    <div class="searchbox">
+        <input type="text" placeholder="Search...">
+        <a href="#">
+            <i class="fas fa-search"></i>
+        </a>
+
+    </div>
+
+    </div>
+    <div class="container"  id="product-list">
+        <h3 class="title">Beauty Suppiment</h3><hr><br><br>
+        <div class="products-container">
+            
+            <div class="products"data-name="p1">
+                <img src="images/1.png" alt="">
+                <h3>Biona Capsule 30S</h3>
+                <div class="price">Rs.680.00</div>
+
+            </div> 
+            
+            <div class="products"data-name="p2">
+                <img src="images/2.png" alt="">
+                <h3>Biona for Men</h3>
+                <div class="price">Rs.5000.00</div>
+
+            </div> 
+
+            <div class="products"data-name="p3">
+                <img src="images/3.png" alt="">
+                <h3>Biotin Plus</h3>
+                <div class="price">Rs.790.00</div>
+
+            </div> 
+            
+            <div class="products"data-name="p4">
+                <img src="images/4.png" alt="">
+                <h3>Bioita Gold Nutrition Fvor Healthy Skin Capsule 30S</h3>
+                <div class="price">Rs.5000.00</div>
+
+            </div> 
+            <div class="products"data-name="p5">
+                <img src="images/5.png" alt="">
+                <h3>Everose 1000MG CAPS - Evening Primrose Oil</h3>
+                <div class="price">Rs.3000.00</div>
+
+            </div>
+
+            <div class="products"data-name="p6">
+                <img src="images/6.png" alt="">
+                <h3>Glow Softgel Capsules For Skin 30S</h3>
+                <div class="price">Rs.780.00</div>
+
+            </div>
+
+            <div class="products"data-name="p7">
+                <img src="images/7.png" alt="">
+                <h3>Perfectil Platinum</h3>
+                <div class="price">Rs.875.00</div>
+
+            </div>
+
+            <div class="products"data-name="p8">
+                <img src="images/8.png" alt="">
+                <h3>Wellwomen 50+ TABS 30S</h3>
+                <div class="price">Rs.370.00</div>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="product-preview">
+            <div class="preview" data-target="p1">
+                <img src="images/icons8-close.gif" class="closebtn">
+                <img src="images/1.png"  alt="">
+                <h3>Biona Capsule 30S</h3>
+                <p>BIONA consists of vitamins, natural carotenoids, minerals and trace elements that have positive influence on the health of skin, hair follicles and nails.</p>
+                <div class="price">Rs.680.00</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p2">
+                <img src="images/icons8-close.gif" alt="" class="closebtn">
+                <img src="images/2.png"  alt="">
+                <h3>Biona for Men</h3>
+                <p>Biona for Men is a formula with balanced blend of vitamins and minerals, essential for the production of the building blocks of your body</p>
+                <div class="price">Rs.5000.00</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p3">
+                <img src="images/icons8-close.gif" alt="" class="closebtn">
+                <img src="images/3.png" alt="">
+                <h3>Biotin Plus</h3>
+                <p>Biotin Plus is a combination of Biotin and Folic acid; both are essential B vitamins that help in regulating the body's systems </p>
+                <div class="price">Rs.790.00</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p4">
+                <img src="images/icons8-close.gif" alt="" class="closebtn">
+                <img src="images/4.png" alt="">
+                <h3>Bioita Gold Nutrition Fvor Healthy Skin Capsule 30S</h3>
+                <p>This is a natural vitamin supplement to help you improve your complexion. It is also a drug free & antibiotic free pill.</p>
+                <div class="price">Rs.5000.00</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p5">
+                <img src="images/icons8-close.gif" alt="" class="closebtn">
+                <img src="images/5.png" alt="">
+                <h3>Everose 1000MG CAPS - Evening Primrose Oil</h3>
+                <p>Each Softgel Capsule contains Evening Primrose oil 1000 mg. Evening primrose oil is extracted from the seeds of Oenothera biennis.</p>
+                <div class="price">Rs.3000.00</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p6">
+                <img src="images/icons8-close.gif" alt="" class="closebtn">
+                <img src="images/6.png" alt="">
+                <h3>Glow Softgel Capsules For Skin 30S</h3>
+                <p>contains essential protein building blocks to improve collagen formation in your skin which may improve its firmness. </p>
+                <div class="price">Rs.780.00</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p7">
+                <img src="images/icons8-close.gif" alt="" class="closebtn">
+                <img src="images/7.png" alt="">
+                <h3>Perfectil Platinum</h3>
+                <p>Radiance is designed to help support skin radiance from within. The unique formula combines Bio-Marine Collagen & Botanical extracts.</p>
+                <div class="price">Rs.875.00</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p8">
+                <img src="images/icons8-close.gif" alt="" class="closebtn">
+                <img src="images/8.png" alt="">
+                <h3>Wellwomen 50+ TABS 30S</h3>
+                <p>contains 28x multinutrient tablets and 28x high purity, super strength Omega-3,6,9 capsules containing Omega-3 fish oil, Evening Primrose Oil</p>
+                <div class="price">Rs.370.00</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html"class="cart">Add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        
+<section class="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <form>
+        <input type="email" placeholder="Enter your email address">
+        <button type="submit" class="btn">Subscribe</button>
+    </form>
+</section>
+<footer>
+    <div class="footer-row">
+      <div class="footer-column">
+        <h3>Product Range</h3>
+        <ul>
+          <li>Health</li>
+          <li>Body care</li>
+          <li>Personal care</li>
+          <li>Mother and baby</li>
+          <li>Wellness</li>
+          <li>Traditional Remedies</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Information</h3>
+        <ul>
+          <li>About Us</li>
+          <li>FAQ</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <ul>
+          <li>Address: No 77, Galaha Rd, Peradeniya, Kandy.</li>
+          <li>Email: info@purecare.com</li>
+          <li>Phone: +94 76 450 2288</li>
+          <li>             +94 76 450 2285</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+            <li><a href="#"><img src="icons/facebook1.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="icons/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="icons/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="icons/whatapp.png" alt="WhatsApp"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

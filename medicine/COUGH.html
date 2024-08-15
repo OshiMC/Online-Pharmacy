@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICINE|Pure Care Pharmacy</title>
+    <link rel="stylesheet" href="CSS/style.css?v=<?php echo time(); ?>">
+    <script src="JS/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5ee0b91135.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.php"><img src="images/purecare.png" alt="Pharmacy Logo"></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><img src="images/search-icon.png" alt="Search"></button>
+        </div>
+        <div>
+            <button class="add-prescription"><a href="prescription/prescription.html">Upload Prescription</a></button>
+        </div>
+        <div class="user-links">
+          <a href="#" class = "cart"><img src="images/cart.png" alt="Cart"></a>
+          <a href="#" onclick="openLoginPopup()"><img src="images/login.png" alt="Login"></a>
+        </div>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="COUGH.html">Medicine</a></li>
+                <li><a href="../MedicalD/new4/device.html">Medical Device</a></li>
+                <li><a href="../Wellness/bs/Beauty suppliment.html">Wellness</a></li>
+                <li><a href="../Personal Care/Body/bodycare.html">Personal Care</a></li>
+                <li><a href="../AboutUs/index.html">About Us</a></li>
+            </ul>
+        </nav>
+  <br>
+       
+  <div class="sort-container">
+    <label for="sort" class="sort-label">Sort By:</label>
+    <select id="sort" class="sort-dropdown">
+        <option value="HEART.html">Heart and Diebates</option>
+        <option value="COUGH.html">Cough/Cold and Allergy</option>
+        <option value="PAIN.html">Pain and Fever</option>
+        <option value="EAR.html">Ear/Nose and Throat</option>
+        <option value="EYE.html">Eye</option>
+        <option value="VITAMIN.html">Vitamin and Minerals</option>
+    </select>
+ </div>
+    <div class="searchbox">
+        <input type="text" placeholder="Search...">
+        <a href="#">
+            <i class="fas fa-search"></i>
+        </a>
+
+    </div>
+    
+
+    </div>
+    <div class="container"  id="product-list">
+        <h3 class="title">Cough/Cold and Allergy</h3><hr><br><br>
+        <div class="products-container">
+            
+            <div class="products"data-name="p1">
+                <img src="images/immuno start.png" alt="">
+                <h3>HEALING HERBS IMMUNO START SYRUP 100ML</h3>
+                <div class="price">LKR 683.00 </div>
+
+            </div> 
+            
+            <div class="products"data-name="p2">
+                <img src="images/bharaka ashwa.jpg" alt="">
+                <h3>BARAKA ASHWA INHALER CAPSULES</h3>
+                <div class="price">LKR 58.00 Per Tablet</div>
+
+            </div> 
+
+            <div class="products"data-name="p3">
+                <img src="images/Cough arishtaya 200ml.jpg" alt="">
+                <h3>COUGH ARISHTAYA 200ML</h3>
+                <div class="price">LKR 858.00 </div>
+
+            </div> 
+            
+            <div class="products"data-name="p4">
+                <img src="images/vicks.jpg"alt="">
+                <h3>VICKS VAPORUB 25G</h3>
+                <div class="price">LKR 90.00 Per Tablet</div>
+
+            </div> 
+        
+       
+            <div class="products"data-name="p5">
+                <img src="image/Prospan.jpg" alt="">
+                <h3>PROSPAN COUGH SYRUP 60ML</h3>
+                <div class="price">LKR 830.00 </div>
+
+            </div>
+
+            <div class="products"data-name="p6">
+                <img src="images/dry cought.jpg" alt="">
+                <h3>NYAL COUGH MEDICINE FOR DRY COUGHS 200MLS</h3>
+                <div class="price">LKR 670.00 </div>
+
+            </div>
+
+            <div class="products"data-name="p7">
+                <img src="images/coldcam.jpg" alt="">
+                <h3>COLDCALM TABLETS</h3>
+                <div class="price">LKR 119.00 Per Tablet</div>
+
+            </div>
+
+            <div class="products"data-name="p8">
+                <img src="images/delsym cough.webp"alt="">
+                <h3>DELSYM CHILDREN'S 12 HOUR COUGH RELIEF </h3>
+                <div class="price">LKR 540.00 </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+        <div class="product-preview">
+            <div class="preview" data-target="p1">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/immuno start.png"alt="">
+                <h3>HEALING HERBS IMMUNO START SYRUP 100ML</h3>
+                <p>A strong immune system is a key to evade sicknesses such as common cold/flu/allergies (food/dust/pollen) and digestive issues which are caused due to pathogens like viruses & bacteria. If your child is getting sick quite often, it could be a sign that his/her immune system is not strong enough to fight these harmful microorganisms.
+                    Healing Herbs Immuno Start Immune Booster Syrup, scientifically formulated with European Elderberry is a safe & effective supplement for daily immune support as well as treating the signs of cold & flu such as sneezing, sore throat, nasal congestion, and inflammation.
+                    It is the best immune booster syrup available in Sri Lanka with clinically proven European Black Elderberry to strengthen & improve the child’s immune system.</p>
+                <div class="price">rLKR 683.00 </div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p2">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/bharaka ashwa.jpg" alt="">
+                <h3>BARAKA ASHWA INHALER CAPSULES</h3>
+                <p>Ashwa capsules are made with a combination of black seed oil, which enhance the efficacy of Ashwa and herbs which are tried and tested for many centuries. These herbs have been commonly used for cold, cough, stuffy and irritated nose, headache etc.
+                    Ingredients are Black seed oil, Eucalyptus, Menthol, Camphor, Terpineol
+                    Recommended for Headache, Cold, Cough, Relives nasal congestion
+                    Directions for use, Snip off the tip of the capsule, Squeeze the contents to a handkerchief and inhale or squeeze on the pillow when going to sleep or squeeze in to bowl of hot water and inhale the vapor.</p>
+                <div class="price">LKR 58.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p3">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/Cough arishtaya 200ml.jpg"alt="">
+                <h3>COUGH ARISHTAYA 200ML</h3>
+                <p>Cough Arishtaya 200ml.</p>
+                <div class="price">LKR 858.00 </div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+           
+             
+            <div class="preview" data-target="p4">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/vicks.jpg"alt="">
+                <h3>VICKS VAPORUB 25G</h3>
+                <p>VICKS VapoRub is a medicine which provides symptomatic relief from blocked nose, cough and muscular aches and pains due to colds.
+                    Vicks VapoRub is a medicine which provides symptomatic relief from blocked nose, cough and muscular aches and pains due to colds.
+                    Uses:
+                    ✅ On chest and throat, temporarily relieves cough due to minor throat and bronchial irritation associated with the common cold
+                    ✅On muscles and joints, temporarily relieves minor aches and pains of muscles and joints
+                    Adults and children 2 years and over:
+                    For cough suppression
+                    Rub a thick layer on throat and chest
+                    Cover with a warm, dry cloth if desired
+                    Keep clothing loose about throat and chest to help vapors reach the nose and mouth
+                    Use up to three times daily or as directed by doctorFor muscle / joint minor aches and pains
+                    Apply to affected area not more than 3 to 4 times daily
+                    Children under 2 years: ❌Do not use.</p>
+                <div class="price">LKR 83.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p5">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/Prospan.jpg" alt="">
+                <h3>PROSPAN COUGH SYRUP 60ML</h3>
+                <p>It is an herbal medicinal product used as an expectorant in case of productive cough for adults.Adolescents and children from 2 years of age.It facilitate expectoration and relaxed exhausting spasmodic cough by clearing airways. This syrup also relieves the shortness of breath associated with bronchitis.
+                    Do not take dried ivy leaf extract if:
+                    If you are allergic to ivy leafs, to plants of the Araliaceae (ivy) family. Children under 2 years of age because of the risk of worsening of respiratory symptoms.</p>
+                <div class="price">LKR 670.00</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p6">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/dry cought.jpg"alt="">
+                <h3>NYAL COUGH MEDICINE FOR DRY COUGHS 200ML</h3>
+                <p>
+                    Nyal Dry Cough Medicine soothes dry irritating coughs.
+                    
+                    What Nyal Dry Cough Medicine is used for:
+                    Nyal Dry Cough Medicine provides soothing relief from dry irritating coughs associated with colds, flu, sore throats and mild bronchitis.
+                    
+                    Soothes Dry Irritating Coughs
+                    
+                    Sugar & Alcholo Free
+                    
+                    Non-drowsy</p>
+                <div class="price">LKR 830.00 </div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p7">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/coldcam.jpg"alt="">
+                <h3>COLDCALM TABLETS</h3>
+                <p> Multi-symptom relief for every stage of a cold.Non-drowsy, non-habit forming.No risk of rebound congestion or interaction with other.medications or supplements.Tablets melt in the mouth without water, chewing, or swallowing.Recommended for adults and children ages 3 and up.Gluten-free and no artificial sweeteners, flavors, colors, or preservatives.Box contains 60 unflavored tablets.An HSA & FSA eligible over-the-counter medicine.Available as sweet meltaway pellets for children and liquid doses for babies.Also try Oscillococcinum® for flu symptoms and the Chestal® cough syrup line.</p>
+                <div class="price">LKR 119.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p8">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/delsym cough.webp"alt="">
+                <h3>DELSYM CHILDREN'S 12 HOUR COUGH RELIEF </h3>
+                <p>Other Information: Store at 68-77 degrees FDA (20-25 degrees C). Each 5 ml Contains: sodium (7 mg). Dosing cup provided. Misc: For children & adults. Dextromethorphan polistirex extended-release suspension. Alcohol-free. Contains no fever reducer or pain reliever. Cough suppressant. Uses: Temporarily relieves cough due to minor throat and bronchial irritation as may occur with the common cold or inhaled irritants; the impulse to cough to help you get to sleep.</p>
+                <div class="price">LKR 540.00 </div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+           
+           
+        
+        </div>
+        <section class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+        <footer>
+            <div class="footer-row">
+              <div class="footer-column">
+                <h3>Product Range</h3>
+                <ul>
+                  <li>Health</li>
+                  <li>Body care</li>
+                  <li>Personal care</li>
+                  <li>Mother and baby</li>
+                  <li>Wellness</li>
+                  <li>Traditional Remedies</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                  <li>About Us</li>
+                  <li>FAQ</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Contact Info</h3>
+                <ul>
+                  <li>Address: No 77, Galaha Rd, Peradeniya, Kandy.</li>
+                  <li>Email: info@purecare.com</li>
+                  <li>Phone: +94 76 450 2288</li>
+                  <li>             +94 76 450 2285</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img src="images/facebook1.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="images/instagram.png" alt="WhatsApp"></a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+
+
+</body>
+</html>

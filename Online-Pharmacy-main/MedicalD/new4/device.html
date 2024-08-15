@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Medical Device|Pure Care Pharmacy</title>
+    <link rel="stylesheet" href="CSS/device.css?v=<?php echo time(); ?>">
+    <script src="JS/device.js" defer></script>
+    <script src="https://kit.fontawesome.com/5ee0b91135.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../index.php"><img src="image/purecare.png" alt="Pharmacy Logo"></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><img src="image/search-icon.png" alt="Search"></button>
+        </div>
+        <div>
+            <button class="add-prescription"><a href="MedicalD/prescription/prescription.html">Upload Prescription</a></button>
+        </div>
+        <div class="user-links">
+          <a href="../../cart/cart.html" class = "cart"><img src="image/cart.png" alt="Cart"></a>
+          <a href="../../LoginPage/Resgister.html" onclick="openLoginPopup()"><img src="image/login.png" alt="Login"></a>
+        </div>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="../../index.php">Home</a></li>
+                <li><a href="../../medicine/COUGH.html">Medicine</a></li>
+                <li><a href="device.html">Medical Device</a></li>
+                <li><a href="../../Wellness/bs/Beauty suppliment.html">Wellness</a></li>
+                <li><a href="../../Personal Care/Body/bodycare.html">Personal Care</a></li>
+                <li><a href="../../AboutUs/index.html">About Us</a></li>
+            </ul>
+        </nav>
+  <br>
+       
+  <div class="sort-container">
+    <label for="sort" class="sort-label">Sort By:</label>
+    <select id="sort" class="sort-dropdown" onchange="redirectToPage()">
+        <option value="device.html">First Aid</option>
+        <option value="device2.html">Health Devices</option>
+    </select>
+ </div>
+    <div class="searchbox">
+        <input type="text" placeholder="Search...">
+        <a href="#">
+            <i class="fas fa-search"></i>
+        </a>
+
+    </div>
+    
+
+    </div>
+    <div class="container"  id="product-list">
+        <h3 class="title">Lates Products</h3><hr><br><br>
+        <div class="products-container">
+            
+            <div class="products"data-name="p1">
+                <img src="image/img1.jpg" alt="">
+                <h3>Face Mask</h3>
+                <div class="price">rs.500</div>
+
+            </div> 
+            
+            <div class="products"data-name="p2">
+                <img src="image/img2.jpg" alt="">
+                <h3>First Aid Kit</h3>
+                <div class="price">rs.2800</div>
+
+            </div> 
+
+            <div class="products"data-name="p3">
+                <img src="image/img13.jpg" alt="">
+                <h3>First Aid Box</h3>
+                <div class="price">rs.800</div>
+
+            </div> 
+            
+            <div class="products"data-name="p4">
+                <img src="image/img4.jpg" alt="">
+                <h3>Foot Care Plaster</h3>
+                <div class="price">rs.200</div>
+
+            </div> <br>
+        </div>
+        <h3 class="title"> First Aid </h3><hr><br> <br>
+        <div class="products-container">
+            <div class="products"data-name="p5">
+                <img src="image/img5.jpg" alt="">
+                <h3>Cotton Balls</h3>
+                <div class="price">rs.300</div>
+
+            </div>
+
+            <div class="products"data-name="p6">
+                <img src="image/img6.jpg" alt="">
+                <h3>Cotton Creap Bandage</h3>
+                <div class="price">rs.450</div>
+
+            </div>
+
+            <div class="products"data-name="p7">
+                <img src="image/img7.jpeg" alt="">
+                <h3>Detol Liquid</h3>
+                <div class="price">rs.1050</div>
+
+            </div>
+
+            <div class="products"data-name="p8">
+                <img src="image/img8.jpg" alt="">
+                <h3>Surgical Sprit</h3>
+                <div class="price">rs.980</div>
+
+            </div>
+
+            <div class="products"data-name="p9">
+                <img src="image/img9.jpg" alt="">
+                <h3>Oxide Plaster</h3>
+                <div class="price">rs.520</div>
+
+            </div>
+
+            <div class="products"data-name="p10">
+                <img src="image/img10.jpg" alt="">
+                <h3>Iodex balm</h3>
+                <div class="price">rs.150</div>
+
+            </div>
+
+            <div class="products"data-name="p11">
+                <img src="image/img11.jpg" alt="">
+                <h3>Transpor Plaster</h3>
+                <div class="price">rs.590</div>
+
+            </div>
+
+            <div class="products"data-name="p12">
+                <img src="image/img12.jpg" alt="">
+                <h3>Cotton Wool</h3>
+                <div class="price">rs.500</div>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="product-preview">
+            <div class="preview" data-target="p1">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img1.jpg"alt="">
+                <h3>Face Mask</h3>
+                <p>Act as a barrier between the mouth and nose and the surrounding environment.</p>
+                <div class="price">rs.500</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p2">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img2.jpg"alt="">
+                <h3>First Aid kit</h3>
+                <p>  Digital Thermometer MC 246-C1 ( 1 UNIT), Plaster ( 10 PLASTERS) ,Axe Oil 10ML , Samahan - 5 satchets , Strepsil Vitamin C LOZ. 24 S (1 BOX ) , Cotton Wool 20G ( 1 UNIT ) , DETTOL Plaster Fabric ( 1 BOX) , Cotton Kreap</p>
+                <div class="price">rs.2800</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p3">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img13.jpg"alt="">
+                <h3>First Aid Box</h3>
+                <p>Plastic N PG</p>
+                <div class="price">rs.800</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p4">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img4.jpg"alt="">
+                <h3>Foot Care Plaster</h3>
+                <p>FOOT CARE PLASTER. SQ1302. Protect and cushion from rubbing to relieve blister pain instantly. Repel water, dirt and germs to help prevent infection.</p>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p5">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img5.jpg"alt="">
+                <h3>Cotton Balls</h3>
+                <p>Soft care,easy to use,100% cotton,500 balls,perfect for your all cosmetic needs</p>
+                <div class="price">rs.300</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p6">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img6.jpg"alt="">
+                <h3>Cotton Creap Bandage</h3>
+                <p>Cotton Crepe Bandages provide optimum support to the injured area and helps in relieving pain. The material of the bandage is soft and skin friendly.</p>
+                <div class="price">rs.450</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p7">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img7.jpeg"alt="">
+                <h3>Detol Liquid</h3>
+                <p>Dettol Liquid is an antiseptic solution that kills bacteria. Dettol Liquid. Contains Chloroxylenol</p>
+                <div class="price">rs.1050</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p8">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img8.jpg"alt="">
+                <h3>Surgical Sprit</h3>
+                <p>Surgical spirit BP. 2. Qualitative and quantitative composition. Methyl Salicylate 0.5% v/v. Excipients with known effect</p>
+                <div class="price">rs.980</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p9">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img9.jpg"alt="">
+                <h3>Oxide Plaster</h3>
+                <p>Oxide Plaster is a coloured plaster that is applied in 2 coats in a similar application technique to rhinolite.</p>
+                <div class="price">rs.520</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p10">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img10.jpg"alt="">
+                <h3>Iodex balm</h3>
+                <p>Iodex Balm is a power packed formula of 5 natural ingredients Gandapuro Tel, Pudina ka Phool, Nilgiri Tel, Turpine ka Tel, & Lavanga ka Tel.</p>
+                <div class="price">rs.150</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p11">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img11.jpg"alt="">
+                <h3>Transpor Plaster</h3>
+                <p>plasters block 99% of dirt and bacteria. The material is breathable and is water-resistant. The non-stick wound pad protects and cushions the wound.</p>
+                <div class="price">rs.590</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p12">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="image/img12.jpg"alt="">
+                <h3>Cotton Wool</h3>
+                <p>Non-Sterile, Soft and Absorbent Cotton in an Easy to Tear & Use Roll, 1-pound, 12” x 56", White, 1 - Dynarex Cotton Rollv</p>
+                <div class="price">rs.500</div>
+                <div class="buttons">
+                    <a href="../../payment gateway/user.php"class="buy">buy now</a>
+                    <a href="../../cart/cart.html" class="cart">Add to cart</a>
+                </div>
+            </div>
+         
+            </div>
+        <section class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+        <footer>
+            <div class="footer-row">
+              <div class="footer-column">
+                <h3>Product Range</h3>
+                <ul>
+                  <li>Health</li>
+                  <li>Body care</li>
+                  <li>Personal care</li>
+                  <li>Mother and baby</li>
+                  <li>Wellness</li>
+                  <li>Traditional Remedies</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                  <li>About Us</li>
+                  <li>FAQ</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Contact Info</h3>
+                <ul>
+                  <li>Address: No 77, Galaha Rd, Peradeniya, Kandy.</li>
+                  <li>Email: info@purecare.com</li>
+                  <li>Phone: +94 76 450 2288</li>
+                  <li>          +94 76 450 2285</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img src="icons/facebook1.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="icons/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="icons/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="icons/whatapp.png" alt="WhatsApp"></a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+
+</body>
+</html>

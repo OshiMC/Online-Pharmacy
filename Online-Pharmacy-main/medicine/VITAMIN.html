@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICINE|Pure Care Pharmacy</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5ee0b91135.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="image/purecare.png" alt="Pharmacy Logo"></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><img src="image/search-icon.png" alt="Search"></button>
+        </div>
+        <div>
+            <button class="add-prescription"><a href="prescription/prescription.html">Upload Prescription</a></button>
+        </div>
+        <div class="user-links">
+          <a href="#" class = "cart"><img src="image/cart.png" alt="Cart"></a>
+          <a href="#" onclick="openLoginPopup()"><img src="image/login.png" alt="Login"></a>
+        </div>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="shop-now"><a href="#">Shop Now</a></li>
+                <li><a href="#">Drugs</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+  <br>
+       
+  <div class="sort-container">
+    <label for="sort" class="sort-label">Sort By:</label>
+    <select id="sort" class="sort-dropdown">
+        <option value="HEART.html">Heart and Diebates</option>
+        <option value="COUGH.html">Cough/Cold and Allergy</option>
+        <option value="PAIN.html">Pain and Fever</option>
+        <option value="EAR.html">Ear/Nose and Throat</option>
+        <option value="EYE.html">Eye</option>
+        <option value="VITAMIN.html">Vitamin and Minerals</option>
+    </select>
+ </div>
+    <div class="searchbox">
+        <input type="text" placeholder="Search...">
+        <a href="#">
+            <i class="fas fa-search"></i>
+        </a>
+
+    </div>
+    
+
+    </div>
+    <div class="container"  id="product-list">
+        <h3 class="title">Vitamin and Minerals</h3><hr><br><br>
+        <div class="products-container">
+            
+            <div class="products"data-name="p1">
+                <img src="images/body_volt.jpg" alt="">
+                <h3>BODYVOLT TAB 20S</h3>
+                <div class="price">LKR 363.00 Per Tablet</div>
+
+            </div> 
+            
+            <div class="products"data-name="p2">
+                <img src="images/ozical.jpg" alt="">
+                <h3>OZICAL TABLET 30S</h3>
+                <div class="price">LKR 258.00 Per Tablet</div>
+
+            </div> 
+
+            <div class="products"data-name="p3">
+                <img src="images/senatogen-syrup-200ml.png" alt="">
+                <h3>SENATOGEN SYRUP 200ML</h3>
+                <div class="price">LKR 3558.00</div>
+
+            </div> 
+            
+            <div class="products"data-name="p4">
+                <img src="images/Forceval Cap.png"alt="">
+                <h3>FORCEVAL CAP 30S</h3>
+                <div class="price">LKR 90.00 Per Tablet</div>
+
+            </div> 
+        
+       
+            <div class="products"data-name="p5">
+                <img src="images/C Tabs 100mg.jpeg" alt="">
+                <h3>C TABS 100MG 500S</h3>
+                <div class="price">LKR 23.00 Per Tablet</div>
+
+            </div>
+
+            <div class="products"data-name="p6">
+                <img src="images/Solo MEga cap.jpg" alt="">
+                <h3>SOLO MEGA CAP 100S</h3>
+                <div class="price">LKR 67.00 Per Tablet</div>
+
+            </div>
+
+            <div class="products"data-name="p7">
+                <img src="images/seven-seas-calcid.png" alt="">
+                <h3>SEVEN SEAS CALCI D TABS 30 S</h3>
+                <div class="price">LKR 119.00 Per Tablet</div>
+
+            </div>
+
+            <div class="products"data-name="p8">
+                <img src="images/FERUP CAPS.jpg" alt="">
+                <h3>FERUP CAPS 120 S</h3>
+                <div class="price">LKR 140.00 Per Tablet</div>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+        <div class="product-preview">
+            <div class="preview" data-target="p1">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/body_volt.jpg"alt="">
+                <h3>BODYVOLT TAB 20S</h3>
+                <p>Body Volt is Principle Healthcare’s energy and sports nutrition brand. Products designed for the everyday exerciser and amateur athlete, no matter where they are on their fitness journey. From energizing effervescent supplements to Heating & Cooling Gels, there is something for everyone in the Body Volt range, no matter what you want to achieve.</p>
+                <div class="price">rLKR 363.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p2">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/ozical.jpg"alt="">
+                <h3>OZICAL TABLET 30S</h3>
+                <p>Ozical Tablets 30’s,Ozical helps growth and good health. Also, it prevents or treats soft, brittle bones (osteoporosis). The drug as well treats or prevents low calcium levels. Each chewable tablet contains Milk Calcium complex(Hydroxyapatite) and Vitamin D3.</p>
+                <div class="price">LKR 58.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p3">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/senatogen-syrup-200ml.png"alt="">
+                <h3>SENATOGEN SYRUP 200ML</h3>
+                <p>MULTI VITAMIN.</p>
+                <div class="price">LKR 3558.00 </div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+           
+             
+            <div class="preview" data-target="p4">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/Forceval Cap.png"alt="">
+                <h3>FORCEVAL CAP 30S</h3>
+                <p> Forceval Capsules are a multivitamin and mineral supplement. They contain a combination of 24 essential vitamins, minerals and trace elements. The human body requires a wide variety of vitamins, minerals and trace elements to perform crucial daily tasks such as releasing energy from food and repairing cell damage. Your doctor, dietician or pharmacist will give you Forceval Capsules if your diet has not provided you with enough vitamins, minerals and trace elements.</p>
+                <div class="price">LKR 90.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p5">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/C Tabs 100mg.jpeg"alt="">
+                <h3>C TABS 100MG 500S</h3>
+                <p>Vitamin C is essential for boosting the health of the immune system and reducing the severity and duration of winter ills and chills. In addition Vitamin C is a powerful antioxidant, and is considered an essential daily requirement for general health. Vitamin C supports the body’s ability to deal with toxins and pollutants.</p>
+                <div class="price">LKR 23.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p6">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/Solo MEga cap.jpg"alt="">
+                <h3>SOLO MEGA CAP 100S</h3>
+                <p>Product details of MEGA 3 Fish Oil 1000mg Omega 3 100 Capsules, Made in Australia, An excellent source of Omega-3 Fatty Acids Easy to Swallow, Contaminant-Free, Has Superior Stability, No Smell. Neutral in Taste, No Mercury or Heavy Metals, Keeps Levels of Trans Fatty Acids Low, Made From Concentrated Cold-Water Fish Oils.</p>
+                <div class="price">LKR 119.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p7">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/seven-seas-calcid.png" alt="">
+                <h3>SEVEN SEAS CALCI D TABS 30 S</h3>
+                <p> Mariners then referred to the Seven Seas as the Arctic, the Atlantic, the Indian, the Pacific, the Mediterranean, the Caribbean, and the Gulf of Mexico.
+                    Seven Seas Pregnancy is a complete pregnancy multivitamin containing 21 expertly blended vitamin and minerals which work in harmony with your body, for you and your unborn baby. This includes 400µg of Folic Acid which is recommended by the UK government.</p>
+                <div class="price">LKR 119.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p8">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/FERUP CAPS.jpg" alt="">
+                <h3>FERUP CAPS 120 S</h3>
+                <p>Brand Names:Ed Cyte F, Equi-Cyte F, Ferrocite F, Hematinic with Folic Acid, Hemocyte-F, Nephro-Fer RX. Ferrous fumarate is a type of iron. Folic acid (folate) is a type of vitamin B. Iron and vitamin B help your body produce and maintain healthy red blood cells.</p>
+                <div class="price">LKR 140.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+           
+           
+        
+        </div>
+        <section class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+
+</body>
+</html>

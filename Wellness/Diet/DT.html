@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness|Pure Care Pharmacy</title>
+    <link rel="stylesheet" href="DT.css?v=<?php echo time(); ?>">
+    <script src="DT.js" defer></script>
+    <script src="https://kit.fontawesome.com/5ee0b91135.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="icons/purecare.png" alt="Pharmacy Logo"></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><img src="icons/search-icon.png" alt="Search"></button>
+        </div>
+        <div>
+            <button class="add-prescription"><a href="MedicalD/prescription/prescription.html">Upload Prescription</a></button>
+        </div>
+        <div class="user-links">
+          <a href="#" class = "cart"><img src="icons/cart.png" alt="Cart"></a>
+          <a href="#" onclick="openLoginPopup()"><img src="icons/login.png" alt="Login"></a>
+        </div>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../IWT IMages/HEART.html">Medicine</a></li>
+                <li><a href="../../MedicalD/new4/device.html">Medical Devices</a></li>
+                <li><a href="../../Wellness/bs/Beauty suppliment.html">Wellness</a></li>
+                <li><a href="../../Personal Care/Body/bodycare.html">Personal Care</a></li>
+                <li><a href="../../AboutUs/index.html">About Us</a></li>
+            </ul>
+        </nav>
+  <br>
+   
+  <div class="sort-container">
+    <label for="sort" class="sort-label">Sort By:</label>
+    <select id="sort" class="sort-dropdown" onchange="redirectToPage()">
+        <option value="">Diet and Nutrition</option>
+        <option value="device2.html">Traditional Remidies</option>
+        <option value="device.html">Beauty Suppliment</option>
+    </select>
+ </div>
+
+    <div class="searchbox">
+        <input type="text" placeholder="Search...">
+        <a href="#">
+            <i class="fas fa-search"></i>
+        </a>
+
+    </div>
+
+    </div>
+    <div class="container"  id="product-list">
+        <h3 class="title">Diet and Nutrition</h3><hr><br><br>
+        <div class="products-container">
+            
+            <div class="products"data-name="p1">
+                <img src="img/1.png" alt="">
+                <h3>Facia Slim Weight Lost Capsule</h3>
+                <div class="price">Rs.3467.00</div>
+
+            </div> 
+            
+            <div class="products"data-name="p2">
+                <img src="img/2.png" alt="">
+                <h3>Natures way high stregth iron and vitamin c & b12 30s</h3>
+                <div class="price">Rs.3000</div>
+
+            </div> 
+
+            <div class="products"data-name="p3">
+                <img src="img/4.png" alt="">
+                <h3>Principal Vitrite Plus for Pregnancy</h3>
+                <div class="price">Rs.5000.00</div>
+
+            </div> 
+            
+            <div class="products"data-name="p4">
+                <img src="img/3.png" alt="">
+                <h3>Principal Everyday Codliver Oil Cap 90S</h3>
+                <div class="price">Rs.2000</div>
+
+            </div> 
+            <div class="products"data-name="p5">
+                <img src="img/5.png" alt="">
+                <h3>Progain High Protein</h3>
+                <div class="price">Rs.2300</div>
+
+            </div>
+
+            <div class="products"data-name="p6">
+                <img src="img/6.png" alt="">
+                <h3>Swisse Beauty Collagen+ 30Tab</h3>
+                <div class="price">Rs.4896</div>
+
+            </div>
+
+            <div class="products"data-name="p7">
+                <img src="img/8.png" alt="">
+                <h3>Swisse Ultivite Women's Multivitamin</h3>
+                <div class="price">Rs.7896</div>
+
+            </div>
+
+            <div class="products"data-name="p8">
+                <img src="img/7.png" alt="">
+                <h3>Swisse Ultivite Men's Multivitamin</h3>
+                <div class="price">Rs.6500.00</div>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="product-preview">
+            <div class="preview" data-target="p1">
+                <img src="img/icons8-close.gif" alt="" class="closebtn">
+                <img src="img/1.png" alt="">
+                <h3>Facia Slim Weight Lost Capsule</h3>
+                <p>Facia Slim is enriched with natural active ingredients which gives synergistic action to your fat burning and slimming process.</p>
+                <div class="price">Rs.3467.00</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p2">
+                <img src="img/icons8-close.gif" alt="" class="closebtn">
+                <img src="img/2.png" alt="">
+                <h3>Natures way high stregth iron and vitamin c & b12 30s</h3>
+                <p>Insufficient dietary intake can contribute to magnesium deficiency which may cause muscle stiffness, mild twitching and cramps.</p>
+                <div class="price">Rs.3000</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p3">
+                <img src="img/icons8-close.gif" alt="" class="closebtn">
+                <img src="img/4.png" alt="">
+                <h3>Principal Vitrite Plus for Pregnancy</h3>
+                <p>Principle Pregnancy is a one a day multi-vitamin and mineral to support the nutritional requirements  of mother & baby, before & during pregnancy. </p>
+                <div class="price">Rs.5000.00</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p4">
+                <img src="img/icons8-close.gif" alt="" class="closebtn">
+                <img src="img/3.png" alt="">
+                <h3>Principal Everyday Codliver Oil Cap 90S</h>
+                <p>Principle Everyday Cod Liver Oil has been specifically formulated using natural Cod Liver Oil.Including Omega 3 and Vitamins A and D.</p>
+                <div class="price">Rs.2000</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p5">
+                <img src="img/icons8-close.gif" alt="" class="closebtn">
+                <img src="img/5.png"alt="">
+                <h3>Progain High Protein</h3>
+                <p>Supports the Recovery & Growth of Muscle, Epithelial & Connective Tissue.Progain multi-staged high protein is a specially formulated nutrition supplement packed with high quality protein.</p>
+                <div class="price">Rs.2300</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p6">
+                <img src="img/icons8-close.gif" alt="" class="closebtn">
+                <img src="img/6.png" alt="">
+                <h3>Swisse Beauty Collagen+ 30Tab</h3>
+                <p>Swisse Beauty Collagen+ Supplement With Peptides & Vitamin C & E For Beautiful Skin.Supports collagen formation and collagen health.Maintains skin repair and skin elasticity.</p>
+                <div class="price">Rs.4896</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p7">
+                <img src="img/icons8-close.gif" alt="" class="closebtn">
+                <img src="img/8.png" alt="">
+                <h3>Swisse Ultivite Women's Multivitamin</h3>
+                <p>Swisse Ultivite Women's Multivitamin is a premium quality formula containing 50 vitamins, minerals, antioxidants.</p>
+                <div class="price">Rs.7896</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p8">
+                <img src="img/icons8-close.gif" alt="" class="closebtn">
+                <img src="img/7.png" alt="">
+                <h3>Swisse Ultivite Men's Multivitamin</h3>
+                <p>Swisse Ultivite Men's Multivitamin has been formulated based on scientific evidence to provide nutritional support for a busy and active lifestyle.</p>
+                <div class="price">Rs.6500.00</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        
+<section class="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <form>
+        <input type="email" placeholder="Enter your email address">
+        <button type="submit" class="btn">Subscribe</button>
+    </form>
+</section>
+<footer>
+    <div class="footer-row">
+      <div class="footer-column">
+        <h3>Product Range</h3>
+        <ul>
+          <li>Health</li>
+          <li>Body care</li>
+          <li>Personal care</li>
+          <li>Mother and baby</li>
+          <li>Wellness</li>
+          <li>Traditional Remedies</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Information</h3>
+        <ul>
+          <li>About Us</li>
+          <li>FAQ</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <ul>
+          <li>Address: No 77, Galaha Rd, Peradeniya, Kandy.</li>
+          <li>Email: info@purecare.com</li>
+          <li>Phone: +94 76 450 2288</li>
+          <li>             +94 76 450 2285</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+            <li><a href="#"><img src="icons/facebook1.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="icons/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="icons/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="icons/whatapp.png" alt="WhatsApp"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

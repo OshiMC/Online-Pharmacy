@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel - Newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 10px;
+        }
+
+        input[type="email"] {
+            padding: 8px;
+            width: 250px;
+            margin-right: 10px;
+        }
+
+        button[type="submit"] {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Content Area -->
+    <main>
+        <h2>Admin Panel - Newsletter</h2>
+        <div>
+            <h3>Add Subscriber</h3>
+            <form action="newslettercrud.php" method="POST">
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Add Subscriber</button>
+            </form>
+        </div>
+
+        <div>
+            <h3>Remove Subscriber</h3>
+                <div class="newsletter-item">
+                    
+                    <form action="news_delete.php" method="POST">
+                        <input type="email" name="deleteNewsletter" placeholder="Email">
+                        <button type="submit">Delete</button>
+                    </form>
+                </div>
+                     
+        </div>
+    </main>
+</body>
+</html>

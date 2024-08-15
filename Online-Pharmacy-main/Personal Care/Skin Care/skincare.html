@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Care|Skin Care|Pure Care Pharmacy</title>
+    <link rel="stylesheet" href="CSS/skincare.css?v=<?php echo time(); ?>">
+    <script src="JS/skincare.js" defer></script>
+    <script src="https://kit.fontawesome.com/5ee0b91135.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    
+    <header>
+        <div class="logo">
+            <a href="../../index.php"><img src="icons/purecare.png" alt="Pharmacy Logo"></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><img src="icons/search-icon.png" alt="Search"></button>
+        </div>
+        <div>
+            <button class="add-prescription"><a href="MedicalD/prescription/prescription.html">Upload Prescription</a></button>
+        </div>
+        <div class="user-links">
+          <a href="#" class = "cart"><img src="icons/cart.png" alt="Cart"></a>
+          <a href="#" onclick="openLoginPopup()"><img src="icons/login.png" alt="Login"></a>
+        </div>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="../../index.php">Home</a></li>
+                <li><a href="../medicine/COUGH.html">Medicine</a></li>
+                <li><a href="../../MedicalD/new4/device.html">Medical Devices</a></li>
+                <li><a href="../../Wellness/bs/Beauty suppliment.html">Wellness</a></li>
+                <li><a href="../../Personal Care/Body/bodycare.html">Personal Care</a></li>
+                <li><a href="../../AboutUs/index.html">About Us</a></li>
+            </ul>
+        </nav>
+  <br>
+   
+  <div class="sort-container">
+    <label for="sort" class="sort-label">Sort By:</label>
+    <select id="sort" class="sort-dropdown">
+        <option value="device.html">Personal Care</option>
+        <option value="device2.html">Skin Care</option>
+    </select>
+ </div>
+
+    <div class="searchbox">
+        <input type="text" placeholder="Search...">
+        <a href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+    </div>
+
+    <div class="container"  id="product-list">
+        <h3 class="title">Skin Care</h3><hr><br><br>
+        <div class="products-container">
+            
+            <div class="products"data-name="p1">
+                <img src="imagesc/1.jpg" alt="">
+                <h3>Face Cream 100ml</h3>
+                <div class="price">Rs.2000.00</div>
+
+            </div> 
+            
+            <div class="products"data-name="p2">
+                <img src="imagesc/2.jpg" alt="">
+                <h3>Beauty Bar 500g</h3>
+                <div class="price">Rs.1000.00</div>
+
+            </div> 
+
+            <div class="products"data-name="p3">
+                <img src="imagesc/3.jpg" alt="">
+                <h3>Night Cream 200ml</h3>
+                <div class="price">Rs.3500.00</div>
+
+            </div> 
+            
+            <div class="products"data-name="p4">
+                <img src="imagesc/4.jpg" alt="">
+                <h3>Face Scrub 200ml</h3>
+                <div class="price">Rs.4500.00</div>
+
+            </div> 
+
+            <div class="products"data-name="p5">
+                <img src="imagesc/5.jpg" alt="">
+                <h3>Face Serum 100ml</h3>
+                <div class="price">Rs.3000.00</div>
+
+            </div>
+
+            <div class="products"data-name="p6">
+                <img src="imagesc/6.jpg" alt="">
+                <h3>Face Toner 100ml</h3>
+                <div class="price">Rs.2500.00</div>
+
+            </div>
+
+            <div class="products"data-name="p7">
+                <img src="imagesc/7.jpg" alt="">
+                <h3>Face Wash 200ml</h3>
+                <div class="price">Rs.2500.00</div>
+
+            </div>
+
+            <div class="products"data-name="p8">
+                <img src="imagesc/8.jpg" alt="">
+                <h3>Face Mask 300ml</h3>
+                <div class="price">Rs.5500.00</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+        <div class="product-preview">
+
+            <div class="preview" data-target="p1">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="imagesc/1.jpg"alt="">
+                <h3>Face Cream 100ml</h3>
+                <p>"Experience the ultimate skincare revolution with our luxurious face cream, delivering unparalleled hydration and rejuvenation for a radiant, ageless glow."</p>
+                <div class="price">rs.500</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p2">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="imagesc/2.jpg"alt="">
+                <h3>Beauty Bar 500g</h3>
+                <p>"Elevate your skincare routine to new heights with our indulgent Beauty Bar, providing a gentle yet effective cleansing experience for a flawless, luminous complexion."</p>
+                <div class="price">rs.500</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p3">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="imagesc/3.jpg"alt="">
+                <h3>Night Cream 200ml</h3>
+                <p>"Unlock the secrets of beauty sleep with our transformative Night Cream, nourishing and repairing your skin overnight for a renewed, youthful appearance by morning."</p>
+                <div class="price">rs.500</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p4">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="imagesc/4.jpg"alt="">
+                <h3>Face Scrub 200ml</h3>
+                <p>"Experience the ultimate exfoliation with our rejuvenating Face Scrub, a gentle yet effective formula that buffs away dull skin cells, revealing a smoother, brighter complexion that radiates youthfulness."</p>
+                <div class="price">rs.500</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p5">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="imagesc/5.jpg"alt="">
+                <h3>Face Serum 100ml</h3>
+                <p>"Discover the power of our Face Serum, a potent elixir that revitalizes and transforms your skin, unveiling a luminous complexion with reduced fine lines and a radiant glow."</p>
+                <div class="price">rs.500</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p6">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="imagesc/6.jpg"alt="">
+                <h3>Face Toner 100ml</h3>
+                <p>"Elevate your skincare ritual with our refreshing Face Toner, a balancing and rejuvenating elixir that tightens pores and restores your skin's natural radiance for a flawless, healthy complexion."</p>
+                <div class="price">rs.500</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p7">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="imagesc/7.jpg"alt="">
+                <h3>Face Wash 200ml</h3>
+                <p>"Experience the ultimate cleanse with our invigorating Face Wash, a gentle yet effective formula that removes impurities, leaving your skin refreshed, revitalized, and ready to glow."</p>
+                <div class="price">rs.500</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p8">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="imagesc/8.jpg"alt="">
+                <h3>Face Mask 300ml</h3>
+                <p>"Pamper your skin with our indulgent Face Mask, a luxurious treatment that deeply nourishes and detoxifies, revealing a visibly brighter, smoother complexion."</p>
+                <div class="price">rs.500</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+        
+<section class="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <form>
+        <input type="email" placeholder="Enter your email address">
+        <button type="submit" class="btn">Subscribe</button>
+    </form>
+</section>
+
+</body>
+</html>

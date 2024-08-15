@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICINE|Pure Care Pharmacy</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5ee0b91135.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="image/purecare.png" alt="Pharmacy Logo"></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><img src="image/search-icon.png" alt="Search"></button>
+        </div>
+        <div>
+            <button class="add-prescription"><a href="prescription/prescription.html">Upload Prescription</a></button>
+        </div>
+        <div class="user-links">
+          <a href="#" class = "cart"><img src="image/cart.png" alt="Cart"></a>
+          <a href="#" onclick="openLoginPopup()"><img src="image/login.png" alt="Login"></a>
+        </div>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="shop-now"><a href="#">Shop Now</a></li>
+                <li><a href="#">Drugs</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+  <br>
+       
+  <div class="sort-container">
+    <label for="sort" class="sort-label">Sort By:</label>
+    <select id="sort" class="sort-dropdown">
+        <option value="HEART.html">Heart and Diebates</option>
+        <option value="COUGH.html">Cough/Cold and Allergy</option>
+        <option value="PAIN.html">Pain and Fever</option>
+        <option value="EAR.html">Ear/Nose and Throat</option>
+        <option value="EYE.html">Eye</option>
+        <option value="VITAMIN.html">Vitamin and Minerals</option>
+    </select>
+ </div>
+    <div class="searchbox">
+        <input type="text" placeholder="Search...">
+        <a href="#">
+            <i class="fas fa-search"></i>
+        </a>
+
+    </div>
+    
+
+    </div>
+    <div class="container"  id="product-list">
+        <h3 class="title">Ear/Nose and Throat</h3><hr><br><br>
+        <div class="products-container">
+            
+            <div class="products"data-name="p1">
+                <img src="images/avamys_nasal_spray.jpg" alt="">
+                <h3>AVAMYS AQUEOUS NASAL SPRAY </h3>
+                <div class="price">LKR 1723.00 </div>
+
+            </div> 
+            
+            <div class="products"data-name="p2">
+                <img src="images/salin_nasal_drops_10ml_0_0.jpg" alt="">
+                <h3>NASI- SALINE NASAL DROP</h3>
+                <div class="price">LKR 858.00 </div>
+
+            </div> 
+
+            <div class="products"data-name="p3">
+                <img src="images/NASOCLEAR-20ML-DROPS.jpg"alt="">
+                <h3>NASOCLEAR DROPS 20ML</h3>
+                <div class="price">LKR 1008.00</div>
+
+            </div> 
+            
+            <div class="products"data-name="p4">
+                <img src="images/candid.jpg" alt="">
+                <h3>CANDID EAR DROPS 15MLL</h3>
+                <div class="price">LKR 590.00 </div>
+
+            </div> 
+        
+       
+            <div class="products"data-name="p5">
+                <img src="images/mouth paint.jpg" alt="">
+                <h3>CANDID MOUTH PAINT 15ML</h3>
+                <div class="price">LKR 567.00 </div>
+
+            </div>
+
+            <div class="products"data-name="p6">
+                <img src="images/metrogyl.jpg" alt="">
+                <h3>METROGYL DENTA GEL 20GM</h3>
+                <div class="price">LKR 800.00 </div>
+
+            </div>
+
+            <div class="products"data-name="p7">
+                <img src="images/flomist.jpg"" alt="">
+                <h3>FLOMIST AQUEOUS 50MCG</h3>
+                <div class="price">LKR 1069.00 </div>
+
+            </div>
+
+            <div class="products"data-name="p8">
+                <img src="images/waxsol.jpg" alt="">
+                <h3>WAXSOL SOL 10ML</h3>
+                <div class="price">LKR 1190.00 </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+        <div class="product-preview">
+            <div class="preview" data-target="p1">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/avamys_nasal_spray.jpg" alt="">
+                <h3>AVAMYS AQUEOUS NASAL SPRAY </h3>
+                <p>Avamys Nasal Spray is a steroid. It relieves the symptoms of allergic rhinitis such as runny nose, sneezing and sinus discomfort. It works by blocking the production of certain chemical messengers that cause inflammation (swelling) and allergies, thus relieving the discomfort and irritation in your nose. It may take a few days for the spray to take full effect. If you do not see an improvement in your symptoms after a week you should talk to your doctor.</p>
+                <div class="price">rLKR 1723.00 </div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p2">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/salin_nasal_drops_10ml_0_0.jpg" alt="">
+                <h3>NASI- SALINE NASAL DROP</h3>
+                <p>	Nasivion – Saline Nasal Solution, A nose that feels good, Nasivion Saline Drops is a safe solution for dry stuffy noses of your little ones. It’s an isotonic saline solution provides a natural way to soothe dryness. It can also help to improve nasal hygiene </p>
+                <div class="price">LKR 858.00 </div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p3">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/NASOCLEAR-20ML-DROPS.jpg"alt="">
+                <h3>NASOCLEAR DROPS 20ML</h3>
+                <p> Uses: It is used to treat low sodium levels. It is used in the diet to meet sodium needs. Sodium chloride is a salt supplement. It puts back salt and water losses. It may pull extra fluid out of a swollen area.
+
+                    Common side effects of Sodium Chloride :Swelling. Pain and irritation where this drug goes into the body. Oral:- Swelling. Upset stomach or throwing up. Many small meals, good mouth care, sucking hard, sugar-free candy, or chewing sugar-free gum may help. Loose stools.</p>
+                <div class="price">LKR 108.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+           
+             
+            <div class="preview" data-target="p4">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/candid.jpg"alt="">
+                <h3>CANDID EAR DROPS 15ML</h3>
+                <p>CLOTRIMAZOLE.</p>
+                <div class="price">LKR 590.00 </div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p5">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/mouth paint.jpg"alt="">
+                <h3>CANDID MOUTH PAINT 15ML</h3>
+                <p>	METRONIDAZOLE.</p>
+                <div class="price">LKR 567.00</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p6">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/metrogyl.jpg" alt="">
+                <h3>METROGYL DENTA GEL 20GM </h3>
+                <p> </p>
+                 <div class="price">LKR 800.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p7">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/flomist.jp"alt="">
+                <h3>FLOMIST AQUEOUS 50MCG</h3>
+                <p>Uses: It is used to treat low sodium levels. It is used in the diet to meet sodium needs. Sodium chloride is a salt supplement. It puts back salt and water losses. It may pull extra fluid out of a swollen area.
+
+                    Common side effects of Sodium Chloride :Swelling. Pain and irritation where this drug goes into the body. Oral:- Swelling. Upset stomach or throwing up. Many small meals, good mouth care, sucking hard, sugar-free.</p>
+                <div class="price">LKR 1069.00 Per Tablet</div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="preview" data-target="p8">
+                <img src="image/icons8-close.gif"alt="" class="closebtn">
+                <img src="images/waxsol.jpg"alt="">
+                <h3>WAXSOL SOL 10ML</h3>
+                <p>You soften earwax with olive oil, baby oil or ear drops, such as Waxsol or Cerumol, which can be bought from your pharmacy. Place a few drops in your ear each day for 3 to 7 days to soften and loosen the wax so it falls out natural.</p>
+                <div class="price">LKR 1190.00 </div>
+                <div class="buttons">
+                    <a href="#"class="buy">buy now</a>
+                    <a href="#"class="cart">Add to cart</a>
+                </div>
+            </div>
+           
+           
+        
+        </div>
+        <section class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+
+</body>
+</html>
